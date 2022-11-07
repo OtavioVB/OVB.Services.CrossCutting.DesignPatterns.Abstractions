@@ -1,11 +1,11 @@
 ﻿namespace OVB.Services.CrossCutting.DesignPatterns.Abstractions.Handler;
 
-public abstract class HandleRequest
+public abstract class IHandleRequest
 {
     public Guid Identifier { get; private set; }
     public DateTime Time { get; private set; }
 
-    protected HandleRequest(Guid identifier, DateTime time)
+    protected IHandleRequest(Guid identifier, DateTime time)
     {
         Identifier = identifier;
         Time = time;

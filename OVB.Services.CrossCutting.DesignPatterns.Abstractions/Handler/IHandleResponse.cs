@@ -1,12 +1,12 @@
 ﻿namespace OVB.Services.CrossCutting.DesignPatterns.Abstractions.Handler;
 
-public abstract class HandleResponse
+public abstract class IHandleResponse
 {
     public Guid Identifier { get; private set; }
     public int HttpStatusReturn { get; private set; }
     public string Message { get; private set; }
 
-    protected HandleResponse(Guid identifier, int httpStatusReturn, string message)
+    protected IHandleResponse(Guid identifier, int httpStatusReturn, string message)
     {
         Identifier = identifier;
         HttpStatusReturn = httpStatusReturn;
